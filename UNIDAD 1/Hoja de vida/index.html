@@ -1,72 +1,172 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Personal</title>
-    <link rel="stylesheet" href="styles.css">
-
+    <title>Hoja de Vida - Sebastian Gaviria</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script defer src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
 </head>
 
 <body>
-
-
-    <body>
-        <div class="container">
-            <div class="header">
-                <h1>SEBASTIAN GAVIRIA</h1>
-                <h2>Tecnología en Sistemas de Información y Desarrollo de Software</h2>
-                <h3>Universidad Santiago de Cali</h3>
+    <div class="resume">
+        <div class="left-column">
+            <div class="profile-pic">
+                <img src="images/perfil.jpg" alt="Foto de Alfredo Torres">
             </div>
-            <div class="content">
-                <div class="left-column">
-                    <section class="personal-info">
-                        <!-- Personal Info Section -->
-                    </section>
-                    <section class="photo">
-                        <img src="./images/perfil.jpg" alt="Perfil">
-                    </section>
-                    <section class="skills">
-                        <h4>Tecnolog</h4>
-                        <ul id="skillsList">
-                            <!-- Skills will be added here -->
-                        </ul>
-                        <button id="addSkillBtn">Agregar Skill</button>
+            <div class="contact-info">
+                <h2><span>Contacto</span></h2>
+                <p><i class="bi bi-telephone-fill"></i> (319) 247-4479</p>
+                <p><i class="bi bi-envelope-fill"></i><a> sgaviria1997@gmail.com</a></p>
+                <p><i class="bi bi-file-person-fill"></i> 1234188146</p>
+            </div>
+            <div class="references">
+                <h2>Referencias</h2>
+                <p><i class="bi bi-person-circle"></i><strong> Valeria Mina</strong><br>Esposa<br>(333) 333-3333</p>
+                <p><i class="bi bi-person-circle"></i><strong> Gabriel Gaviria</strong><br>Hermano<br>(333) 333-3333</p>
+            </div>
+            <div class="website">
+                <h2>Sitio Web</h2>
+                <p><a href="https://thesegared.github.io/">thesegared.github.io</a></p>
+            </div>
 
-                        <h4>Idiomas</h4>
-                        <ul id="languagesList">
-                            <li>Español (native)</li>
-                        </ul>
-                    </section>
+            <div class="habilidades-personales">
+                <h2>Habilidades Técnicas</h2>
+                <ul class="habilidades">
+                    <li>Excel (Intermedio)</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Premiere Pro</li>
+                    <li>Wondershare Filmora</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h2>Habilidades</h2>
+                <ul id="skillsList">
+                    <li>Liderazgo
+                        <button class="edit-btn"><i class="bi bi-pencil"></i></button>
+                        <button class="delete-btn"><i class="bi bi-trash"></i></button>
+                    </li>
+                    <li>Comunicación
+                        <button class="edit-btn"><i class="bi bi-pencil"></i></button>
+                        <button class="delete-btn"><i class="bi bi-trash"></i></button>
+                    </li>
+                    <li>Toma de decisiones
+                        <button class="edit-btn"><i class="bi bi-pencil"></i></button>
+                        <button class="delete-btn"><i class="bi bi-trash"></i></button>
+                    </li>
+                    <li>Gestión del tiempo
+                        <button class="edit-btn"><i class="bi bi-pencil"></i></button>
+                        <button class="delete-btn"><i class="bi bi-trash"></i></button>
+                    </li>
+                    <li>Trabajo en equipo
+                        <button class="edit-btn"><i class="bi bi-pencil"></i></button>
+                        <button class="delete-btn"><i class="bi bi-trash"></i></button>
+                    </li>
+                </ul>
+                <button class="add-btn" id="add-skill">
+                    <i class="bi bi-plus-circle"></i> Añadir Habilidad
+                </button>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="nombre">
+                <h1>SEBASTIAN GAVIRIA</h1>
+                <h2>-Desarrollador de Software-</h2>
+            </div>
+            <div class="about-me">
+                <h2>Sobre Mí</h2>
+                <p>Estudiante de Tecnología en Sistemas y Desarrollo de Software, apasionado por la programación. Tengo
+                    conocimientos
+                    en lenguajes como C, Java, HTML, CSS y JavaScript, que me han permitido a lo largo de mi experiencia
+                    desarrollar y construir mi portafolio personal. Con habilidad para adaptarse a las diferentes
+                    necesidades de la organización. Garantizando de manera estratégica la toma de decisiones concreta y
+                    en momentos oportunos.</p>
+            </div>
+            <div class="experience">
+                <h2>Experiencia Laboral</h2>
+                <div class="job">
+                    <h3>> Administrador y técnico de sistemas</h3>
+                    <h4>En LA TECHNOLOGY, Julio 2014 - presente</h4>
+                    <ul>
+                        <li><strong>Propietario y Administrador del Establecimiento: </strong>Gestioné todas las
+                            operaciones del comercio, incluyendo ventas, administración y soporte técnico.</li>
+                        <li><strong>Mantenimiento Correctivo y Preventivo: </strong>Realicé mantenimiento preventivo y
+                            correctivo en computadores, asegurando su óptimo funcionamiento y prolongando su vida útil.
+                        </li>
+                        <li><strong>Atención al Cliente: </strong>Proporcioné soporte técnico y atención personalizada a
+                            clientes, resolviendo problemas y respondiendo consultas para garantizar la satisfacción del
+                            cliente.</li>
+                        <li><strong>Gestión de Inventarios: </strong>Supervisé la adquisición y el control de
+                            inventarios de hardware y software, asegurando disponibilidad y reducción de costos.</li>
+                        <li><strong>Desarrollo de Estrategias de Venta:: </strong>Implementé estrategias de ventas que
+                            aumentaron los ingresos del negocio en un 20% anual.</li>
+                    </ul>
                 </div>
-                <div class="right-column">
-                    <section class="academic-history">
-                        <h2>Historial Académico</h2>
-                        <p id="academicHistory">Soy estudiante del programa Tecnología en sistemas de información y
-                            desarrollo de software en la Universidad Santiago de Cali. Actualmente me encuentro cursando
-                            el quinto semestre.</p>
-                        <button id="editAcademicHistoryBtn">Editar</button>
-                    </section>
+            </div>
+            <div class="education">
+                <h2>Educación</h2>
+                <ul id="educationList">
+                    <li>
+                        <strong>2013 - Educación Secundaria</strong><br>Centro de Educación en Tecnología
+                        <button class="edit-btn"><i class="bi bi-pencil"></i></button>
+                        <button class="delete-btn"><i class="bi bi-trash"></i></button>
+                    </li>
+
+                    <li>
+                        <strong>2022 - Auxiliar en Sistemas Informáticos</strong><br>CENAL
+                        <button class="edit-btn"><i class="bi bi-pencil"></i></button>
+                        <button class="delete-btn"><i class="bi bi-trash"></i></button>
+                    </li>
+
+                    <li>
+                        <strong>2024 - Tecnología en Sistemas y Desarrollo de Software
+                            (Actualmente)</strong><br>Universidad Santiago de
+                        Cali
+                        <button class="edit-btn"><i class="bi bi-pencil"></i></button>
+                        <button class="delete-btn"><i class="bi bi-trash"></i></button>
+                    </li>
+
+                </ul>
+                <button class="add-btn" id="add-education">
+                    <i class="bi bi-plus-circle"></i> Añadir Educación
+                </button>
+            </div>
+            <div class="lenguajes">
+                <h2>Skills</h2>
+                <ul id="lenguajesList">
+                    <li>JAVA
+                        <button class="edit-btn"><i class="bi bi-pencil"></i></button>
+                        <button class="delete-btn"><i class="bi bi-trash"></i></button>
+                    </li>
+                    <li>HTML/CSS
+                        <button class="edit-btn"><i class="bi bi-pencil"></i></button>
+                        <button class="delete-btn"><i class="bi bi-trash"></i></button>
+                    </li>
+                    <li>JAVASCRIPT
+                        <button class="edit-btn"><i class="bi bi-pencil"></i></button>
+                        <button class="delete-btn"><i class="bi bi-trash"></i></button>
+                    </li>
+                </ul>
+                <button class="add-btn" id="add-lenguaje">
+                    <i class="bi bi-plus-circle"></i> Añadir Lenguaje
+                </button>
+            </div>
+
+            <div class="languages">
+                <h2>Idiomas</h2>
+                <div class="language-list">
+                    <p>Español (Nativo)</p>
+                    <p>Inglés (Intermedio)</p>
                 </div>
             </div>
         </div>
-
-        <script src="script.js"></script>
-    </body>
-
+    </div>
 </body>
 
 </html>
